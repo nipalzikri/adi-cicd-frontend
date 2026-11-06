@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <header class="card-header">
+      <div class="status-indicator">
+        <span class="dot"></span>
+        <span id="app-status">Online</span>
+      </div>
+      <h1>DevOps Local Portal</h1>
+      <p class="subtitle">KinD ÔÇó Jenkins ÔÇó ArgoCD ÔÇó Envoy Gateway</p>
+    </header>
+
+    <section class="info-list">
+      <div class="info-row">
+        <span class="label">Build Number</span>
+        <span class="value" id="build-number">#1</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Commit SHA</span>
+        <span class="value code" id="commit-sha">local-dev</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Commit Message</span>
+        <span class="value" id="commit-msg">Local Development</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Ingress Route</span>
+        <span class="value">Envoy Gateway (Port 80)</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Build Time</span>
+        <span class="value" id="app-timestamp">-</span>
+      </div>
+    </section>
+
+    <footer class="card-footer">
+      <button id="refresh-btn">Cek /healthz</button>
+      <pre id="health-output"></pre>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
