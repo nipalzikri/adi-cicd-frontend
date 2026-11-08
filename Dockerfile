@@ -1,4 +1,4 @@
-﻿# Multi-Stage Build: Builder & Runtime
+# Multi-Stage Build: Builder & Runtime
 FROM node:22-alpine AS builder
 WORKDIR /app
 
