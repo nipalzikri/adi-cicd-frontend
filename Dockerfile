@@ -19,6 +19,8 @@ RUN echo "{\"status\":\"UP\",\"application\":\"frontend-devops-portal\",\"versio
 # Stage 2: Nginx Web Server Runtime
 FROM nginx:1.27-alpine-slim
 
+RUN apk update && apk upgrade --no-cache
+
 # Hapus konfigurasi dan file bawaan nginx
 RUN rm -rf /etc/nginx/conf.d/* /usr/share/nginx/html/*
 
