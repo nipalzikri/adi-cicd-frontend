@@ -1,4 +1,4 @@
-﻿# Multi-Stage Build: Builder & Runtime
+# Multi-Stage Build: Builder & Runtime
 FROM node:22-alpine AS builder
 WORKDIR /app
 
@@ -18,6 +18,9 @@ RUN echo "{\"status\":\"UP\",\"application\":\"frontend-devops-portal\",\"versio
 
 # Stage 2: Nginx Web Server Runtime
 FROM nginx:1.27-alpine-slim
+
+# Patch celah keamanan (CVE) OS packages untuk lolos scan Trivy
+RUN apk update && apk upgrade --no-cache
 
 # Hapus konfigurasi dan file bawaan nginx
 RUN rm -rf /etc/nginx/conf.d/* /usr/share/nginx/html/*
