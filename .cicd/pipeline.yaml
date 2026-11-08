@@ -1,4 +1,4 @@
-﻿# .cicd/pipeline.yaml ÔÇö konfigurasi Jenkins CI untuk frontend UI
+# .cicd/pipeline.yaml ÔÇö konfigurasi Jenkins CI untuk frontend UI
 app_name: frontend
 language: nodejs
 
@@ -6,7 +6,7 @@ test:
   command: "npm test"
 
 gitops:
-  repo_url: https://github.com/rezanaipospos/gitops.git
+  repo_url: https://github.com/nipalzikri/adi-cicd-gitops.git
   branch: main
   path: applications/development/frontend
   deploy_file: patch/deployment.yaml
