@@ -1,4 +1,4 @@
-﻿# `apps/frontend` ÔÇö DevOps Showcase Portal
+﻿# `apps/frontend` DevOps Showcase Portal
 
 Aplikasi Web UI modern berbasis **Single Page Application (SPA)** yang di-serve menggunakan **Nginx Alpine**. Dirancang untuk menggantikan `backend-go` sebagai workload utama pada pipeline CI/CD Jenkins, GitOps ArgoCD, dan Envoy Gateway API.
 
