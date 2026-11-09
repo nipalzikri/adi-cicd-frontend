@@ -16,4 +16,4 @@ build:
   branch: development
 
 kind_cluster_name: devops-local-cluster
-enable_security_scan: false
+enable_security_scan: true
