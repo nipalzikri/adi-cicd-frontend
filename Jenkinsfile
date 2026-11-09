@@ -1,4 +1,4 @@
-﻿// Jenkinsfile ÔÇö diletakkan di root apps/frontend
+// Jenkinsfile ÔÇö diletakkan di root apps/frontend
 @Library('course-shared-library') _
 
 containerPipeline(

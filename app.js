@@ -1,4 +1,4 @@
-﻿async function loadHealthz() {
+async function loadHealthz() {
   const pre = document.getElementById("health-output");
   try {
     const res = await fetch("/healthz", { cache: "no-store" });
