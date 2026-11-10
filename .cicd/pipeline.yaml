@@ -17,3 +17,6 @@ build:
 
 kind_cluster_name: devops-local-cluster
 enable_security_scan: true
+
+slack:
+  channel: "#adi-cicd-notif"
