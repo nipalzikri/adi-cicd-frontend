@@ -1,4 +1,4 @@
-# .cicd/pipeline.yaml ÔÇö konfigurasi Jenkins CI untuk frontend UI
+# .cicd/pipeline.yaml konfigurasi Jenkins CI untuk frontend UI
 app_name: frontend
 language: nodejs
 
